@@ -1,0 +1,5 @@
+{
+  "id": "req-invalid-1",
+  "imp": [],
+  "site": "this-should-be-an-object"
+}

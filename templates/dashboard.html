@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini OpenRTB Bidder Simulator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div>
+        <h1>Mini OpenRTB Bidder Simulator</h1>
+        <p class="subtitle">Educational DSP prototype &middot; OpenRTB 2.x</p>
+      </div>
+      <button id="refresh-btn" type="button">Refresh</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="columns">
+      <div>
+        <section class="card">
+          <h2>Campaigns</h2>
+          <table>
+            <thead>
+              <tr><th>ID</th><th>Name</th><th>Status</th><th>CPM</th><th>Targeting</th></tr>
+            </thead>
+            <tbody id="campaigns-body"></tbody>
+          </table>
+          <p class="empty-note" id="campaigns-empty" hidden>
+            No campaigns yet &mdash; create one with <code>POST /api/campaigns</code>
+            (ready-made requests live in <code>samples/</code>).
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Creatives</h2>
+          <table>
+            <thead>
+              <tr><th>ID</th><th>Campaign</th><th>Name</th><th>Size</th></tr>
+            </thead>
+            <tbody id="creatives-body"></tbody>
+          </table>
+          <p class="empty-note" id="creatives-empty" hidden>
+            No creatives yet &mdash; a campaign needs one before it can bid.
+          </p>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>Test console</h2>
+        <p class="muted">Edit the OpenRTB bid request below, then send it to
+          <code>POST /openrtb/bid</code>.</p>
+        <textarea id="bid-input" rows="15" spellcheck="false"
+                  aria-label="OpenRTB bid request JSON"></textarea>
+        <div class="console-actions">
+          <button id="send-bid-btn" type="button">Send bid request</button>
+        </div>
+
+        <div id="bid-result" hidden>
+          <p id="bid-status" class="status-line"></p>
+          <pre id="bid-response" hidden></pre>
+        </div>
+
+        <div id="win-panel" hidden>
+          <p class="muted">We won the auction. The exchange would now fire our
+            <code>nurl</code> &mdash; simulate it with a clearing price:</p>
+          <div class="console-actions">
+            <input id="win-price" type="number" step="0.01" min="0"
+                   aria-label="Clearing price">
+            <button id="fire-win-btn" type="button">Fire win notice</button>
+          </div>
+          <pre id="win-response" hidden></pre>
+        </div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Recent auctions</h2>
+      <table>
+        <thead>
+          <tr><th>Time (UTC)</th><th>Request</th><th>Result</th><th>Campaign</th>
+              <th>Price</th><th>Reason</th></tr>
+        </thead>
+        <tbody id="log-body"></tbody>
+      </table>
+      <p class="empty-note" id="log-empty" hidden>
+        No auctions yet &mdash; send a bid request from the test console.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Impressions (won &amp; confirmed)</h2>
+      <table>
+        <thead>
+          <tr><th>Time (UTC)</th><th>Bid</th><th>Campaign</th>
+              <th>Bid price</th><th>Win price</th></tr>
+        </thead>
+        <tbody id="impressions-body"></tbody>
+      </table>
+      <p class="empty-note" id="impressions-empty" hidden>
+        No impressions yet &mdash; win an auction, then fire its win notice.
+      </p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>

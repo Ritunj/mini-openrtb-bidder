@@ -1,0 +1,18 @@
+[
+  {
+    "bid_id": "bid_b625a3",
+    "campaign_id": "camp_f3da97",
+    "creative_id": "cr_a07dfa",
+    "bid_price": 2.5,
+    "win_price": 1.87,
+    "timestamp": "2026-07-07T00:50:18+00:00"
+  },
+  {
+    "bid_id": "bid_e6ac62",
+    "campaign_id": "camp_f3da97",
+    "creative_id": "cr_a07dfa",
+    "bid_price": 2.5,
+    "win_price": 2.5,
+    "timestamp": "2026-07-07T08:02:45+00:00"
+  }
+]

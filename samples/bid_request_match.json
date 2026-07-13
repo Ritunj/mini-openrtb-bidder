@@ -1,0 +1,7 @@
+{
+  "id": "req-demo-1",
+  "imp": [{ "id": "1", "banner": { "w": 300, "h": 250 }, "bidfloor": 1.0 }],
+  "site": { "domain": "news.example.com", "cat": ["IAB12"] },
+  "device": { "devicetype": 4, "os": "Android", "geo": { "country": "IND" } },
+  "user": { "id": "user-abc" }
+}

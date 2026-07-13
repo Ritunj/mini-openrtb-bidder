@@ -1,0 +1,59 @@
+[
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-demo-1",
+    "result": "bid",
+    "bid_id": "bid_b625a3",
+    "campaign_id": "camp_f3da97",
+    "creative_id": "cr_a07dfa",
+    "price": 2.5
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-demo-2",
+    "result": "bid",
+    "bid_id": "bid_5d78d5",
+    "campaign_id": "camp_e7cc0b",
+    "creative_id": "cr_e87bfb",
+    "price": 1.5
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-demo-3",
+    "result": "no_bid",
+    "reason": "no active campaign matched (targeting, floor, or creative size)"
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-size-005",
+    "result": "no_bid",
+    "reason": "no active campaign matched (targeting, floor, or creative size)"
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-demo-4",
+    "result": "no_bid",
+    "reason": "no active campaign matched (targeting, floor, or creative size)"
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-demo-5",
+    "result": "no_bid",
+    "reason": "no active campaign matched (targeting, floor, or creative size)"
+  },
+  {
+    "timestamp": "2026-07-07T00:50:18+00:00",
+    "request_id": "req-invalid-1",
+    "result": "invalid",
+    "reason": "'imp' is required and must be a non-empty array of impression objects; 'site' must be a JSON object"
+  },
+  {
+    "timestamp": "2026-07-07T07:59:19+00:00",
+    "request_id": "req-demo-1",
+    "result": "bid",
+    "bid_id": "bid_e6ac62",
+    "campaign_id": "camp_f3da97",
+    "creative_id": "cr_a07dfa",
+    "price": 2.5
+  }
+]

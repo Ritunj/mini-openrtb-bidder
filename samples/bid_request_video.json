@@ -1,0 +1,7 @@
+{
+  "id": "req-demo-5",
+  "imp": [{ "id": "1", "bidfloor": 1.0 }],
+  "site": { "domain": "videos.example.com", "cat": ["IAB1"] },
+  "device": { "devicetype": 4, "os": "Android", "geo": { "country": "IND" } },
+  "user": { "id": "user-mno" }
+}

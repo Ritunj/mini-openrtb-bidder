@@ -1,0 +1,3 @@
+# Pinned to the exact version this project was built and tested with,
+# so "pip install -r requirements.txt" reproduces the same environment.
+flask==3.1.3

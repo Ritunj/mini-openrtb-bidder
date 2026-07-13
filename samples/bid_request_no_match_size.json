@@ -1,0 +1,5 @@
+{
+  "id": "req-size-005",
+  "imp": [{ "id": "1", "banner": { "w": 160, "h": 600 } }],
+  "device": { "devicetype": 4, "geo": { "country": "IND" } }
+}

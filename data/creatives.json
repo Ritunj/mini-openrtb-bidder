@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cr_a07dfa",
+    "campaign_id": "camp_f3da97",
+    "name": "Acme 300x250 banner",
+    "w": 300,
+    "h": 250,
+    "adm": "<div style='width:300px;height:250px;background:#ffe8cc;text-align:center'>Acme Shoes - Diwali 50% off!</div>",
+    "adomain": [
+      "acme-shoes.example"
+    ]
+  },
+  {
+    "id": "cr_e87bfb",
+    "campaign_id": "camp_e7cc0b",
+    "name": "WorldCo 728x90 leaderboard",
+    "w": 728,
+    "h": 90,
+    "adm": "<div style='width:728px;height:90px;background:#d9e8ff;text-align:center'>WorldCo - news for everyone</div>",
+    "adomain": [
+      "worldco.example"
+    ]
+  },
+  {
+    "id": "cr_2d3d91",
+    "campaign_id": "camp_ab0a26",
+    "name": "Ghost 300x250 banner",
+    "w": 300,
+    "h": 250,
+    "adm": "<div>You should never see this ad - the campaign is paused.</div>",
+    "adomain": [
+      "ghostco.example"
+    ]
+  }
+]

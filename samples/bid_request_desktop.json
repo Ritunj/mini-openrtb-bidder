@@ -1,0 +1,7 @@
+{
+  "id": "req-demo-2",
+  "imp": [{ "id": "1", "banner": { "w": 728, "h": 90 }, "bidfloor": 0.5 }],
+  "site": { "domain": "worldnews.example.com", "cat": ["IAB1"] },
+  "device": { "devicetype": 2, "os": "Windows", "geo": { "country": "USA" } },
+  "user": { "id": "user-def" }
+}

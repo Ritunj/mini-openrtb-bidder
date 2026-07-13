@@ -1,0 +1,10 @@
+{
+  "name": "My Example Campaign",
+  "advertiser": "Example Corp",
+  "cpm_bid": 2.0,
+  "targeting": {
+    "countries": ["IND"],
+    "device_types": ["mobile"],
+    "site_categories": []
+  }
+}

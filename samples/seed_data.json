@@ -1,0 +1,61 @@
+{
+  "campaigns": [
+    {
+      "name": "Diwali Sale - IND Mobile",
+      "advertiser": "Acme Shoes",
+      "cpm_bid": 2.5,
+      "targeting": {
+        "countries": ["IND"],
+        "device_types": ["mobile"],
+        "site_categories": ["IAB12"]
+      }
+    },
+    {
+      "name": "Global Desktop News",
+      "advertiser": "WorldCo",
+      "cpm_bid": 1.5,
+      "targeting": {
+        "countries": [],
+        "device_types": ["desktop"],
+        "site_categories": []
+      }
+    },
+    {
+      "name": "Paused Premium",
+      "advertiser": "GhostCo",
+      "cpm_bid": 9.0,
+      "status": "paused",
+      "targeting": {
+        "countries": ["IND"],
+        "device_types": [],
+        "site_categories": []
+      }
+    }
+  ],
+  "creatives": [
+    {
+      "campaign_name": "Diwali Sale - IND Mobile",
+      "name": "Acme 300x250 banner",
+      "w": 300,
+      "h": 250,
+      "adm": "<div style='width:300px;height:250px;background:#ffe8cc;text-align:center'>Acme Shoes - Diwali 50% off!</div>",
+      "adomain": ["acme-shoes.example"]
+    },
+    {
+      "campaign_name": "Global Desktop News",
+      "name": "WorldCo 728x90 leaderboard",
+      "w": 728,
+      "h": 90,
+      "adm": "<div style='width:728px;height:90px;background:#d9e8ff;text-align:center'>WorldCo - news for everyone</div>",
+      "adomain": ["worldco.example"]
+    },
+    {
+      "campaign_name": "Paused Premium",
+      "name": "Ghost 300x250 banner",
+      "w": 300,
+      "h": 250,
+      "adm": "<div>You should never see this ad - the campaign is paused.</div>",
+      "adomain": ["ghostco.example"]
+    }
+  ]
+}

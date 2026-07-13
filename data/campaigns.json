@@ -1,0 +1,48 @@
+[
+  {
+    "id": "camp_f3da97",
+    "name": "Diwali Sale - IND Mobile",
+    "advertiser": "Acme Shoes",
+    "status": "active",
+    "cpm_bid": 2.5,
+    "targeting": {
+      "countries": [
+        "IND"
+      ],
+      "device_types": [
+        "mobile"
+      ],
+      "site_categories": [
+        "IAB12"
+      ]
+    }
+  },
+  {
+    "id": "camp_e7cc0b",
+    "name": "Global Desktop News",
+    "advertiser": "WorldCo",
+    "status": "active",
+    "cpm_bid": 1.5,
+    "targeting": {
+      "countries": [],
+      "device_types": [
+        "desktop"
+      ],
+      "site_categories": []
+    }
+  },
+  {
+    "id": "camp_ab0a26",
+    "name": "Paused Premium",
+    "advertiser": "GhostCo",
+    "status": "paused",
+    "cpm_bid": 9.0,
+    "targeting": {
+      "countries": [
+        "IND"
+      ],
+      "device_types": [],
+      "site_categories": []
+    }
+  }
+]
